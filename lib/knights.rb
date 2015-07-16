@@ -6,15 +6,19 @@ class Knights
   end
 
   def moves
+    compute_moves.join("\n")
+  end
+
+  private
+
+  def compute_moves
     positions.map do |position|
       Knight.new(position).moves
     end
   end
 
-  private
-
   def positions
-    positions_lines.split('\n')
+    positions_lines.split("\n")
   end
 
 end
