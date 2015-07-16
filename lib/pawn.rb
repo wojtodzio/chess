@@ -1,10 +1,10 @@
 require_relative 'support.rb'
 
-class Knight
+class Pawn
   include Support
   attr_reader :position
 
-  VECTORS = [[-2, -1], [-2, 1], [-1, -2], [-1, 2], [1, -2], [1, 2], [2, -1], [2, 1]]
+  VECTORS = [[0, 1]]
 
   def initialize(position)
     @position = position
