@@ -16,15 +16,23 @@ class Knight
 
   private
 
+  def coordinate
+    @coordinate ||= Support.position_to_coordinate(position)
+  end
+
   def possible_coordinate
-    #compute all possible positions(add vectors to position)
-    # *define all transformation vectors
-    # *generate coordinates from position
+    all_coordinates.select { |coordinate| Support.is_in_board?(coordinate) }
+  end
+
+  def all_coordinates
+    VECTORS.map do |vector|
+      [coordinate.first + vector.first, coordinate.last + vector.last]
+    end
   end
 
   def possible_position
     possible_coordinate.map do |coordinate|
-      coordinate_to_position(coordinate)
+      Support.coordinate_to_position(coordinate)
     end
   end
 
@@ -37,6 +45,10 @@ class Knight
 
     def self.position_to_coordinate(position)
       [LETTER_TO_NUMBER.index(position[0]), position[1].to_i]
+    end
+
+    def self.is_in_board?(coordinate)
+      coordinate.first.between?(1, 8) && coordinate.last.between?(1, 8)
     end
   end
 
