@@ -8,10 +8,7 @@ class Knight
   end
 
   def moves
-    #should return all possible positions sorted
-    #convert coordinates to position
-    possible_position
-
+    possible_position.join(' ')
   end
 
   private
