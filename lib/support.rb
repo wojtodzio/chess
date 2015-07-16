@@ -13,9 +13,4 @@ module Support
     coordinate.first.between?(1, 8) && coordinate.last.between?(1, 8)
   end
 
-  # def self.load_from_file(path)
-  #   File.open(path) do |file|
-  #     Knights.new(file.readlines.join)
-  #   end
-  # end
 end
