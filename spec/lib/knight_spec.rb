@@ -8,4 +8,3 @@ describe Knight do
   let(:knight) { described_class.new(example_input) }
   it { expect(knight.moves).to eq(example_output) }
 end
-
