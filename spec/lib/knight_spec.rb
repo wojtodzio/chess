@@ -13,4 +13,9 @@ describe Knight::Support do
     it { expect(described_class.coordinate_to_position([2, 5])).to eq('b5') }
     it { expect(described_class.coordinate_to_position([1, 1])).to eq('a1') }
   end
+
+  describe "position_to_coordinate" do
+    it { expect(described_class.position_to_coordinate('b5')).to eq([2, 5]) }
+    it { expect(described_class.position_to_coordinate('a1')).to eq([1, 1]) }
+  end
 end
