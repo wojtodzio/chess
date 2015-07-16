@@ -7,3 +7,10 @@ describe Knight, :focus do
   let(:knight) { described_class.new(example_input) }
   it { expect(knight.moves).to eq(example_output) }
 end
+
+describe Knight::Support do
+  describe "coordinate_to_position" do
+    it { expect(described_class.coordinate_to_position([2, 5])).to eq('b5') }
+    it { expect(described_class.coordinate_to_position([1, 1])).to eq('a1') }
+  end
+end

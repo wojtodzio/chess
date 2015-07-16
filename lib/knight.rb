@@ -14,4 +14,20 @@ class Knight
 
   end
 
+  private
+
+  def possible_position
+    possible_cooridnate.map do |coordinate|
+      coordinate_to_position(coordinate)
+    end
+  end
+
+  module Support
+    LETTER_TO_NUMBER = " abcdefgh"
+
+    def self.coordinate_to_position(coordinate)
+      LETTER_TO_NUMBER[coordinate.first] + coordinate.last.to_s
+    end
+  end
+
 end
