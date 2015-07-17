@@ -1,6 +1,9 @@
 require 'figure'
-require 'bishop_moves.rb'
 
 class Bishop < Figure
-  include BishopMoves
+  private
+
+  def self.vectors
+    Support.bishop_vectors
+  end
 end

@@ -1,6 +1,9 @@
 require 'figure'
-require 'rook_moves.rb'
 
 class Rook < Figure
-  include RookMoves
+  private
+
+  def self.vectors
+    Support.rook_vectors
+  end
 end

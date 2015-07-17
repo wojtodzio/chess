@@ -23,7 +23,7 @@ class Figure
   end
 
   def all_coordinates
-    self.class::VECTORS.map do |vector|
+    vectors.map do |vector|
       [coordinate.first + vector.first, coordinate.last + vector.last]
     end
   end
@@ -32,5 +32,9 @@ class Figure
     possible_coordinate.map do |coordinate|
       Support.coordinate_to_position(coordinate)
     end
+  end
+
+  def vectors
+    self.class.vectors
   end
 end

@@ -1,7 +1,11 @@
 require 'figure'
-require 'bishop_moves.rb'
-require 'rook_moves.rb'
 
 class Queen < Figure
-  VECTORS = (RookMoves::VECTORS + BishopMoves::VECTORS).sort
+  private
+
+  def self.vectors
+    (Support.bishop_vectors + Support.rook_vectors).sort
+  end
+
+
 end

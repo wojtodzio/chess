@@ -13,4 +13,15 @@ module Support
     coordinate.first.between?(1, 8) && coordinate.last.between?(1, 8)
   end
 
+  def self.bishop_vectors
+    ((7..-1).to_a + (1..7).to_a).map do |number|
+      [[number, number], [number, -number]]
+    end.flatten(1).sort
+  end
+
+  def self.rook_vectors
+    ((7..-1).to_a + (1..7).to_a).map do |number|
+      [[number, 0], [0, number]]
+    end.flatten(1).sort
+  end
 end
