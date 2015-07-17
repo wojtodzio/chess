@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'rook'
-require 'support'
 
 describe Rook do
   let(:example_input) { 'a1' }

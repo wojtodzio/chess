@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'king'
-require 'support'
 
 describe King do
   let(:example_input) { 'd4' }

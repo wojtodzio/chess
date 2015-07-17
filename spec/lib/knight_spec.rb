@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'knight'
-require 'support'
 
 describe Knight do
   let(:example_input) { 'g2' }

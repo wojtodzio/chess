@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'bishop'
-require 'support'
 
 describe Bishop do
   let(:example_input) { 'a1' }

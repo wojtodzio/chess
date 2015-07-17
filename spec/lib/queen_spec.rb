@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'queen'
-require 'support'
 
 describe Queen do
   let(:example_input) { 'a1' }

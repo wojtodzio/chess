@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'pawn'
-require 'support'
 
 describe Pawn do
   context 'on starting position' do

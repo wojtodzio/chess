@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'figure_collection'
 
 describe FigureCollection do
   context "pawn" do
