@@ -1,7 +1,8 @@
-class Knights
-  attr_reader :positions_lines
+class FigureCollection
+  attr_reader :positions_lines, :figure_class
 
-  def initialize(positions_lines)
+  def initialize(figure_class, positions_lines)
+    @figure_class = figure_class
     @positions_lines = positions_lines
   end
 
@@ -13,7 +14,7 @@ class Knights
 
   def compute_moves
     positions.map do |position|
-      Knight.new(position).moves
+      figure_class.new(position).moves
     end
   end
 
