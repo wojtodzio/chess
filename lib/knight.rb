@@ -1,5 +1,3 @@
-require 'figure'
-
 class Knight < Figure
   private
   def self.vectors

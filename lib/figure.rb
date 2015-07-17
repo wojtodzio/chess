@@ -1,5 +1,3 @@
-require_relative 'support.rb'
-
 class Figure
   include Support
   attr_reader :position

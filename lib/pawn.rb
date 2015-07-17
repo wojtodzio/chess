@@ -1,5 +1,3 @@
-require 'figure'
-
 class Pawn < Figure
 
 private

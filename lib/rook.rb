@@ -1,5 +1,3 @@
-require 'figure'
-
 class Rook < Figure
   private
 

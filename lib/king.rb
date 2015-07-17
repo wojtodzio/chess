@@ -1,5 +1,3 @@
-require 'figure'
-
 class King < Figure
   private
 

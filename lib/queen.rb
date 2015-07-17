@@ -1,5 +1,3 @@
-require 'figure'
-
 class Queen < Figure
   private
 
