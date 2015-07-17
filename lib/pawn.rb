@@ -1,7 +1,8 @@
 require 'figure'
 
 class Pawn < Figure
-  private
+
+private
 
   def vectors
     starting_position? ? self.class.vectors : self.class.vectors[0..0]
